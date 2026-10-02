@@ -1,0 +1,80 @@
+/* to make the header a notable color and centered */
+header {
+    background-color: rgb(9, 126, 81);
+    text-align: center;
+}
+
+/* to make the h1 headers a bit bigger and centered */
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* to make the h2 headers a bit smaller and centered */
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* to make the h3 headers a bit smaller and centered */
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* to make the background black and the most text white */
+body {
+    background-color: #000000;
+    color:white
+}
+
+/* to make the change the page text */
+* {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* to make the images have rounded corners and be centered */
+img {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* to make the navigation links a notable color */
+nav{
+    color:blue;
+}
+/* footer class to make the font size smaller */
+footer{
+    font-size: 15px;
+}
+
+/* Hollow Knight Images class*/
+.hk_Images {
+  display: flex;                /* used flex to make the images show in a row when centered */
+  justify-content: center;
+  gap: 4px;
+}
+.hk_Images img {
+  border-radius: 8px;
+  width: 200px;
+  height: auto;
+  margin: 0;
+}
+
+/* the game titles class */
+.gameTitles {
+    color:gold
+}
+
+/* id for the game list description to make it pink */
+#gameListDescription {
+    color: rgb(209, 17, 209);
+}
+
+/* id for the game genre list description to make it red */
+#gameGenreDescription {
+    color: red;
+}
