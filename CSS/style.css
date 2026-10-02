@@ -1,6 +1,6 @@
 /* to make the header a notable color and centered */
 header {
-    background-color: rgb(9, 126, 81);
+    background-color: rgb(0, 50, 0);
     text-align: center;
 }
 
@@ -20,6 +20,15 @@ h2 {
 h3 {
     font-size: 30px;
     text-align: center;
+}
+
+/* to make the paragraphs a bit smaller and centered (added to remove bad <br> when screen is small)*/
+p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  text-align: center;
 }
 
 /* to make the background black and the most text white */
@@ -42,10 +51,16 @@ img {
     margin-right: auto;
 }
 
-/* to make the navigation links a notable color */
+/* to make the navigation link text a notable color */
 nav{
-    color:blue;
+    color:rgb(173, 173, 255);
 }
+
+/* to make the links a notable color */
+a{
+    color:rgb(209, 163, 255);
+}
+
 /* footer class to make the font size smaller */
 footer{
     font-size: 15px;
@@ -71,10 +86,42 @@ footer{
 
 /* id for the game list description to make it pink */
 #gameListDescription {
-    color: rgb(209, 17, 209);
+    color: rgb(242, 99, 242);
 }
 
 /* id for the game genre list description to make it red */
 #gameGenreDescription {
-    color: red;
+    color: rgb(255, 102, 102);
+}
+
+
+/* media query for smaller screens to make the font size smaller */
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 16px;
+    padding: 0 12px;
+  }
+
+  /* stack the Hollow Knight images instead of forcing them side by side */
+  .hk_Images {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hk_Images img {
+    width: 80%;
+    max-width: 280px;
+  }
 }
